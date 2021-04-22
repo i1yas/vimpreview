@@ -5,6 +5,7 @@ RUN apt update && apt install -y tmux neovim inotify-tools
 RUN mkdir -p /root/.config/nvim
 COPY ./.vimrc /root/.config/nvim/init.vim
 COPY ./.tmux.conf /root/.tmux.conf
+COPY ./file_samples /root/file_samples
 
 COPY ./watch_vimrc.sh /root/watch_vimrc.sh
 RUN chmod 755 /root/watch_vimrc.sh

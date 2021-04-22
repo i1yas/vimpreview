@@ -3,5 +3,5 @@
 se all&
 
 " actual config
-
-" open files on start
+set nu
+colors default
